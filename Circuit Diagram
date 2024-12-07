@@ -10,3 +10,7 @@
       -Positive terminal of the pump to the NO terminal of the relay
       -Negative terminal of the pump to the negative terminal of the 9V battery
       -COM of the relay to the positve terminal of the 9V battery
+
+How it works:
+The system works by first testing the moisture level (capacitance) of the soil. If it is below a certain level the pico sends a signal to the relay to turn on the pump. If it is above a certain level nothing happens. After this the system sleeps for 5
+seconds before running the code again.
