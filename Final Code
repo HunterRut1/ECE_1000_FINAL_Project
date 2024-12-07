@@ -1,0 +1,29 @@
+from machine import ADC, Pin
+from time import sleep
+
+# Setup pins
+moisture_sensor = ADC(26)  
+pump = Pin(15, Pin.OUT)    
+
+# Define moisture threshold 
+moisture_threshold = 40000
+
+# Function to read soil moisture
+def read_moisture():
+    return moisture_sensor.read_u16()
+
+while True:
+    moisture_level = read_moisture()
+    print("Moisture level:", moisture_level)
+    
+    # Check if moisture is below threshold
+    if moisture_level > moisture_threshold:
+        print("Soil is dry, watering the plant...")
+        pump.value(1)  # Turn pump on
+        sleep(2)       # Water for 2 seconds
+        pump.value(0)  # Turn pump off
+    else:
+        print("Soil is moist, no need to water.")
+    
+    # Wait before next check
+    sleep(5)   
