@@ -1,0 +1,5 @@
+ This project was a learning experience for me in many ways. Prior to this I had very little experience with coding, using relays, and using Raspberry Pi Pico's. An interest sparked when I realized that certain things could be automated that I hadn't 
+thought about before. This circuit in particular may seem insignificant but can accurately water your plants to a specific and appropriate level better than most people could. Furthermore the thought that something like this could be expanded on a 
+large scale to irrigate fields of various crops is amazing. It could lead to higher crop turnout almost universally. I have also learned to be more resourcefull, for example I could not find a connector for my 9V battery at any store near me, but 
+eventually I took apart an old digital clock to find what I needed. The result of the circuit was generally good however certain connections were finnicky or loose. This caused slight inconsistencies in whether or not it would run. If I wanted to 
+create a better version I would begin by using more premium and parts.
