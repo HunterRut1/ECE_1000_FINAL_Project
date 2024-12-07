@@ -1,0 +1,12 @@
+1. Connecting the Relay:
+      -VCC of Relay to 3.3V on Pico
+      -GND of Relay to GND on Pico
+      -IN of relay to GPIO pin on Pico (GP15)
+2. Connecting the Soil Moisture Sensor:
+      -VCC of the sensor to 3.3V on Pico
+      -GND of the sensor to GND on the Pico
+      -Signal pin to an ADC pin (GP26)
+3. Connecting the Water Pump:
+      -Positive terminal of the pump to the NO terminal of the relay
+      -Negative terminal of the pump to the negative terminal of the 9V battery
+      -COM of the relay to the positve terminal of the 9V battery
